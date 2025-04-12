@@ -32,34 +32,49 @@ Notes-Todo Management Web Testing is a manual and automation testing project des
 
 # Project Structure
 ~~~
-kartiksharma200-notes-todo-management-web-testing/
-├── README.md
-├── pom.xml
-├── testng.xml
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/
-│   │           ├── pageObjects/
-│   │           │   ├── dashboardPage.java
-│   │           │   ├── loginPage.java
-│   │           │   └── signupPage.java
-│   │           └── utils/
-│   │               └── driverManager.java
-│   └── test/
-│       └── java/
-│           └── com/
-│               └── tests/
-│                   ├── e2eTesting.java
-│                   ├── LoginTest.java
-│                   └── SignupTest.java
-└── test-output/
-    ├── emailable-report.html
-    ├── index.html
-    ├── testng-failed.xml
-    ├── testng-results.xml
-    ├── Default suite/
-    └── junitreports/
+Directory structure:
+└── kartiksharma200-notes-todo-management-web-testing/
+    ├── README.md
+    ├── pom.xml
+    ├── testng.xml
+    ├── src/
+    │   ├── main/
+    │   │   └── java/
+    │   │       └── com/
+    │   │           ├── pageObjects/
+    │   │           │   ├── createNoteBook.java
+    │   │           │   ├── createNotes.java
+    │   │           │   ├── dashboardPage.java
+    │   │           │   ├── loginPage.java
+    │   │           │   ├── signupPage.java
+    │   │           │   └── todoListMaker.java
+    │   │           └── utils/
+    │   │               └── driverManager.java
+    │   └── test/
+    │       └── java/
+    │           └── com/
+    │               └── tests/
+    │                   ├── e2eTesting.java
+    │                   ├── LoginTest.java
+    │                   └── SignupTest.java
+    └── test-output/
+        ├── emailable-report.html
+        ├── index.html
+        ├── testng-failed.xml
+        ├── testng-reports.css
+        ├── testng-reports.js
+        ├── testng-reports1.css
+        ├── testng-reports2.js
+        ├── testng-results.xml
+        ├── Default suite/
+        │   ├── Default test.html
+        │   ├── Default test.xml
+        │   └── testng-failed.xml
+        └── junitreports/
+            ├── TEST-com.tests.e2eTesting.xml
+            ├── TEST-com.tests.LoginTest.xml
+            └── TEST-com.tests.SignupTest.xml
+
 ~~~
 ## Installation & Setup
 
