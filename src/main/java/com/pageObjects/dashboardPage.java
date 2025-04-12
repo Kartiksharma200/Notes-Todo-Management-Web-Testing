@@ -9,43 +9,57 @@ public class dashboardPage {
 	WebDriver driver;
 	
 	//Locators
+	
+	// Click on Profile
+		private By profile = By.xpath("(//*[@stroke=\"currentColor\"])[1]");
+	
+	
 	private By NotesMaster = By.xpath("//p[@class='text-[20px] font-bold']");
 	private By writeNotes = By.xpath("//strong[normalize-space()='Write Notes']");
 	private By noteTittle = By.xpath("//input[@placeholder='Notes Title']");
 	private By note = By.xpath("//div[@class='ql-editor ql-blank']//p");
 	private By noteSaveBtn = By.xpath("//strong[normalize-space()='Save Changes']");
-	private By createNoteBooks = By.xpath("//strong[normalize-space()='Create NoteBook']");
-	private By noteBookTittle = By.xpath("//input[@id='title']");
-	private By createBookBtn = By.xpath("//body//div//div//div//div[1]//div[1]//div[2]//button[2]");
-	private By profile = By.xpath("//button[@class='flex items-center space-x-2 z-20 relative bg-primary-50 rounded-md p-2']//*[name()='svg']");
+	
+	
+	private By createBookBtn = By.xpath("//strong[normalize-space()='Submit']");
+	
 	private By logoutBtn = By.xpath("//li[normalize-space()='Logout']");
+	
 	//Constructors
 	public dashboardPage(WebDriver driver) {
 		this.driver = driver;
 	}
 	
 	
-	//Methods for Create Note Books
-	public void clickOnCreateNoteBook() {
-		driver.findElement(createNoteBooks).click();
-	}
-	
-	public void writeNoteBookTittle(String BookTittle) {
-		driver.findElement(noteBookTittle).sendKeys(BookTittle);
-	}
-	
-	public void submitCreateNoteBook() {
-		driver.findElement(createBookBtn).click();
-	}
-	
-	public void verifyCreateNoteBook() {
-		WebElement popOfCreateBook = driver.findElement(By.xpath("//div[@id='5']"));
-		if(popOfCreateBook.isDisplayed()) {
-			System.out.println("<-----------Successfully Create Book------->");
-		}else {
-			System.out.println("<-----------failed to Create Book---------->");
-		}
-	}
+//	//Methods for Create Note Books
+//	public void clickOnProfile() {
+//		driver.findElement(profile).click();
+//	}
+//	
+//	public void clickOnProfileThenNoteBook() {
+//		driver.findElement(profileNotebook).click();
+//	}
+//	
+//	public void clickOnCreateNoteBook() {
+//		driver.findElement(createNoteBooks).click();
+//	}
+//	
+//	public void writeNoteBookTittle(String BookTittle) {
+//		driver.findElement(noteBookTittle).sendKeys(BookTittle);
+//	}
+//	
+//	public void submitCreateNoteBook() {
+//		driver.findElement(createBookBtn).click();
+//	}
+//	
+//	public void verifyCreateNoteBook() {
+//		WebElement popOfCreateBook = driver.findElement(By.xpath("//div[@id='5']"));
+//		if(popOfCreateBook.isDisplayed()) {
+//			System.out.println("<-----------Successfully Create Book------->");
+//		}else {
+//			System.out.println("<-----------failed to Create Book---------->");
+//		}
+//	}
 	
 	//Methods for Logout 
 	public void clickOnProfile() {

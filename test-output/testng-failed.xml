@@ -5,7 +5,11 @@
     <classes>
       <class name="com.tests.e2eTesting">
         <methods>
+          <include name="createNoteBooks"/>
+          <include name="testValidLogin"/>
+          <include name="todoMaker"/>
           <include name="logoutAccountSuccessfuly"/>
+          <include name="createAnNotes"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
